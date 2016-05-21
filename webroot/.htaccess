@@ -1,6 +1,6 @@
 RewriteEngine on
 RewriteBase /
-RewriteRule "^fetch/(.+)$" "/fetch.php?feed=$1" [L,QSA]
-RewriteRule "^view/([^/]+)$" "/view.php?feed=$1" [L,QSA]
-RewriteRule "^view/([^/]+)/([^/]+)$" "/view.php?feed=$1&type=$2" [L,QSA]
+RewriteRule "^fetch/(.+)$" "/fetch_comic.php?feed=$1" [L,QSA]
+RewriteRule "^view/([^/]+)$" "/view_comic.php?feed=$1" [L,QSA]
+RewriteRule "^view/([^/]+)/([^/]+)$" "/view_comic.php?feed=$1&type=$2" [L,QSA]
 
