@@ -1,5 +1,5 @@
 <?php
-	
+
 class CacheService {
 	private $prefix;
 	private $mem;
@@ -17,7 +17,7 @@ class CacheService {
 			return FALSE;
 		}
 	}
-	
+
 	public function set($name, $value, $expirationSeconds) {
 		try {
 			$this->mem->set($this->prefix . $name, $value, time() + $expirationSeconds);

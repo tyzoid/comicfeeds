@@ -1,12 +1,12 @@
 <?php
-
 header("Content-Type: text/plain");
 require_once("common.php");
 
 $feed = $container['feed'];
-$feedName = $feed->getFeedName($_SERVER['REQUEST_URI']);
+$feedName = $_GET['feed'];
 
-if (!isset($container[$feedName])) {
+if (!isset($container[$feedName]))
+{
 	throw new Exception('Invalid feed name to fetch.');
 }
 

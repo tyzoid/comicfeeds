@@ -1,5 +1,7 @@
-<?php header('Location: https://github.com/cbenard/comicfeeds/');
-?><html>
+<?php
+header('Location: https://github.com/tyzoid/comicfeeds/');
+?>
+<html>
 	<head>
 		<title>This page has moved</title>
 	</head>
